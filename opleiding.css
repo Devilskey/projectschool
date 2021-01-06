@@ -1,0 +1,274 @@
+:root{ 
+
+    --color-primary-0: #ffffff ; 
+    
+    --color-primary-1: #2C5BC5;
+     --color-primary-2 : #0C43C0 ;
+     --color-primary-3 : #052878; 
+     --color-primary-4 :#373c47  ; 
+    
+    /*Main Secondary color (1) */
+    --color-secondary-1-0 : #180B9A ;
+    --color-secondary-1-1 :  #4133CA; 
+    --color-secondary-1-2:  #2110C5;
+    --color-secondary-1-3: #12077D ;
+    --color-secondary-1-4: #0C045D ; 
+    
+    /*Main Secondary color (2)*/
+    --color-secondary-2-0 : #045D8D ; 
+     --color-secondary-2-1 : #2288BF;
+     --color-secondary-2-2 : #067AB9;
+      --color-secondary-2-3 : #114866; 
+      --color-secondary-2-4 : #000000; 
+    
+    } 
+
+/*de font family van de title === font-family: 'Raleway', sans-serif;  
+font-family: 'Rokkitt', serif; ===*/
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--color-secondary-2-0);
+}
+
+a{
+  color:var(--color-primary-0);
+
+}
+
+.header{
+  background-color: var( --color-secondary-1-0);
+  box-shadow:1px 1px 4px rgba(0,0,0,.1);
+  position:fixed;
+  width:100%;
+  z-index: 3;
+}
+
+.header ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  overflow:hidden;
+  background-color:var( --color-secondary-1-0);
+
+
+}
+
+.header ul a{
+  display: block; 
+  padding:20px;
+  border-right:1px solid var(--color-primary-4);
+  text-decoration: none;
+
+}
+
+.header ul a:hover{
+  background-color: var(--color-secondary-2-4);
+}
+
+.header .menu .log-in{
+  background-color: var(--color-secondary-2-3 );
+  border-radius: 20px;
+}
+.header .menu .sing-up{
+  background-color: var(--color-secondary-1-1  );
+  
+}
+
+.header .logo{
+  float:left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 30px;
+  
+}
+
+.header .menu{
+  clear:both;
+  max-height:0;
+  transition: max-height .2s ease-out;/*voor de drop down en up voor de menu*/
+
+}
+
+.header .menu-icon{
+  padding:28px 20px;
+  position: relative;
+  float: right;
+  cursor:pointer;
+}
+
+/*how to make bars */
+.header .menu-icon .nav-icon{
+  background:var(--color-primary-0);
+  display: block;
+  height: 2px;
+  width:18px;
+  position: relative;
+  transition: background .2s ease-out;/*to animation de bars*/
+
+
+}
+
+.header .menu-icon .nav-icon:before{
+  background: var(--color-primary-0);
+  content: "";
+  display:block;
+  height:100%;
+  width:100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px; 
+
+}
+
+.header .menu-icon .nav-icon:after{
+  background: var(--color-primary-0);
+  content: "";
+  display:block;
+  height:100%;
+  width:100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top:-5px; 
+
+}
+
+.header .menu-btn{
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    /*(~)lock for the next Available sibling that have a class of menu  */
+  max-height:450px;
+}
+/*animation voor de bars om een (x) to maken als het checked*/
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+  background:transparent;
+
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top:0;
+}
+
+@media (min-width:48em){
+
+
+  .header li{
+      float: left;
+  }
+
+  .header li a{
+      padding: 20px 20px;
+  }
+  .header .menu{
+      clear: none;
+      float:right;
+      max-height: none;
+
+  }
+  .header .menu-icon{
+      display: none;
+  }
+}
+
+/*tag styling */
+
+
+ .tag{
+    background-color: var(--color-secondary-1-0);
+   padding: 42px 30px;
+    width: 100px;
+      position: absolute;
+    
+   
+    
+}
+.tag .tagliste{
+    list-style: none;
+    margin:20px   ;
+    padding: 60px 0;
+  text-decoration: none;
+  display: block;
+
+}
+
+.tag li{
+font-size: 15px;
+margin: 5px  5px;
+padding: 15px 15px;
+
+}
+
+
+
+.tag  li a{
+
+    text-decoration: none;
+    display: block;
+   
+}
+
+.Container{
+  float: right;
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+.InerContainer{
+  margin: 10px 20px;
+  padding: 10px 20px;
+  display: inline;
+}
+.boek1 {
+  float: right;
+  margin: 5px 20px;
+  padding: 10px ;
+ width:100px;
+ position: relative;
+}
+.boek2 {
+  float: right;
+  margin: 5px;
+  padding: 10px;
+ width:100px;
+ position: relative;
+}
+.boek3{
+  float: right;
+  margin: 5px;
+  padding: 10px;
+ width:100px;
+ position: relative;
+}
+
+.boek4{
+  float: right;
+  margin: 5px;
+  padding: 10px;
+ width:100px;
+ 
+ position: relative;
+}
+.boek5{
+  float: right;
+  margin: 5px;
+  padding: 10px;
+ width:100px;
+ position: relative;
+}
+.boek6{
+  float: right;
+  margin: 5px;
+  padding: 10px;
+ width:100px;
+ position: relative;
+}
