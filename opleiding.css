@@ -28,6 +28,7 @@ font-family: 'Rokkitt', serif; ===*/
 
 body{
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
   background-color: var(--color-secondary-2-0);
 }
@@ -65,6 +66,7 @@ a{
 
 .header ul a:hover{
   background-color: var(--color-secondary-2-4);
+  color: var( --color-primary-0);
 }
 
 .header .menu .log-in{
@@ -185,26 +187,30 @@ a{
 
  .tag{
     background-color: var(--color-secondary-1-0);
-   padding: 42px 30px;
-    width: 100px;
-      position: absolute;
-    
-   
-    
+   padding: 20px 30px;
+    width: 15%;  
+    height: 100%;
+    position: fixed;
+
 }
+
+
 .tag .tagliste{
     list-style: none;
-    margin:20px   ;
-    padding: 60px 0;
+    margin:30px  5px ;
+    padding: 50px 0;
   text-decoration: none;
-  display: block;
+  
+  cursor:pointer;
+     display: block;
 
 }
 
 .tag li{
 font-size: 15px;
-margin: 5px  5px;
-padding: 15px 15px;
+margin: 20px  0;
+padding: 20px 20px;
+
 
 }
 
@@ -213,62 +219,81 @@ padding: 15px 15px;
 .tag  li a{
 
     text-decoration: none;
-    display: block;
+    display: inline;
    
 }
 
-.Container{
-  float: right;
+
+
+.Container{ 
   margin: 0;
   padding: 0;
-  height: 50%;
+  height: 0;
+  
 }
 .InerContainer{
-  margin: 10px 20px;
+  margin: 10px 5px;
   padding: 10px 20px;
   display: inline;
+  float: right;
 }
 .boek1 {
   float: right;
   margin: 5px 20px;
   padding: 10px ;
- width:100px;
+  width:10%;
  position: relative;
 }
 .boek2 {
   float: right;
   margin: 5px;
   padding: 10px;
- width:100px;
+  width:10%;
  position: relative;
 }
 .boek3{
   float: right;
   margin: 5px;
   padding: 10px;
- width:100px;
+  width:10%;
  position: relative;
 }
 
 .boek4{
   float: right;
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
- width:100px;
+  width:10%;
  
  position: relative;
 }
 .boek5{
   float: right;
-  margin: 5px;
+  margin: 10px ;
   padding: 10px;
- width:100px;
+  width:10%;
  position: relative;
+ 
+}
+
+/*container 2 styling */
+
+.Container2{ 
+  margin: 0;
+  padding: 0;
+  height: 0;
+  
+}
+.InerContainer2{
+  margin: 10px 5px;
+  padding: 10px 20px;
+  display: inline;
+  
 }
 .boek6{
   float: right;
-  margin: 5px;
-  padding: 10px;
- width:100px;
+  margin: 20px ;
+  padding: 20px;
+  width:10%;
  position: relative;
 }
